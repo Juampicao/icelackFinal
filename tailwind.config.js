@@ -22,13 +22,14 @@ module.exports = {
         // Background Color
         "main-bg": "#FAFBFB",
         "secondary-bg": "black",
+        "half-transparent": "rgba(0, 0, 0, 0.3)",
 
         // Dark Background Color
         "main-dark-bg": "#20232A",
         "secondary-dark-bg": "#33373E",
 
         // Text Color
-        "main-text": "#F7F7F7",
+        "main-text": "white",
         "secondary-text": "#20232A",
       },
     },

@@ -6,8 +6,8 @@ import Header from "../molecules/Header";
 const Descuentos = () => {
   return (
     <div>
-      <Header title="Descuentos" />
       <Layout />
+      <Header title="Descuentos" />
     </div>
   );
 };

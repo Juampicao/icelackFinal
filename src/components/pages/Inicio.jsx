@@ -2,14 +2,15 @@ import React from "react";
 
 import Layout from "../molecules/Layout";
 import Header from "../molecules/Header";
+import CarrouselInicio from "../atoms/CarrouselInicio";
 <Header title="Orders" />;
 
 const Inicio = () => {
   return (
     <div>
-      <h1> antes </h1>
       <Layout />
-      <h1> despues</h1>
+      <h1 className=""> Inicio </h1>
+      <CarrouselInicio />
     </div>
   );
 };

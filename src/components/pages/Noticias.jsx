@@ -6,9 +6,8 @@ import Header from "../molecules/Header";
 const Noticias = () => {
   return (
     <div>
-      <Header title="Noticias" />
-
       <Layout />
+      <Header title="Noticias" />
     </div>
   );
 };

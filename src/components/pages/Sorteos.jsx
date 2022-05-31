@@ -6,8 +6,8 @@ import Header from "../molecules/Header";
 const Sorteos = () => {
   return (
     <div>
-      <Header title="Sorteos" />
       <Layout />
+      <Header title="Sorteos" />
     </div>
   );
 };

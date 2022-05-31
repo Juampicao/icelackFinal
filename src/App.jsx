@@ -2,15 +2,26 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./App.css";
-import { ContextProvider } from "./contexts/ContextProvider";
+// import { useStateContext } from "./contexts/ContextProvider";
 
-import Inicio from "../src/components/pages/Inicio";
-import Descuentos from "../src/components/pages/Descuentos";
-import LogIn from "../src/components/pages/LogIn";
-import Noticias from "../src/components/pages/Noticias";
-import Sorteos from "../src/components/pages/Sorteos";
+// import {
+//   Inicio,
+//   Descuentos,
+//   LogIn,
+//   Noticias,
+//   Sorteos,
+//   Menu,
+// } from "./components/pages/Inicio";
+import Inicio from "./components/pages/Inicio";
+import Descuentos from "./components/pages/Descuentos";
+import LogIn from "./components/pages/LogIn";
+import Noticias from "./components/pages/Noticias";
+import Sorteos from "./components/pages/Sorteos";
+import Menu from "./components/pages/Menu";
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState(``);
+
   return (
     <div className="app">
       <BrowserRouter>

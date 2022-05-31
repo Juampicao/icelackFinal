@@ -1,11 +1,12 @@
 import React from "react";
 
 import BarraInicio from "./BarraInicio";
+import BarraHeader from "./BarraHeader";
 
 const Layout = () => {
   return (
     <div>
-      Layout
+      <BarraHeader />
       <BarraInicio />
     </div>
   );

@@ -6,8 +6,8 @@ import Header from "../molecules/Header";
 const LogIn = () => {
   return (
     <div>
-      <Header title="Login" />
       <Layout />
+      <Header title="Login" />
     </div>
   );
 };
