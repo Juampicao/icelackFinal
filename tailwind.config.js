@@ -22,6 +22,9 @@ module.exports = {
         // Background Color
         "main-bg": "#FAFBFB",
         "secondary-bg": "black",
+        "main-button-bg": "blue",
+        "secondary-button-bg": "red",
+
         "half-transparent": "rgba(0, 0, 0, 0.3)",
 
         // Dark Background Color
