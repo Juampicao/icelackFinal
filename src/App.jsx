@@ -18,6 +18,8 @@ import LogIn from "./components/pages/LogIn";
 import Noticias from "./components/pages/Noticias";
 import Sorteos from "./components/pages/Sorteos";
 import Menu from "./components/pages/Menu";
+import DescuentoParticular from "./components/pages/DescuentoParticular";
+import Formulario from "./components/pages/Formulario";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState(``);
@@ -29,9 +31,17 @@ function App() {
           <Route path="/" element={<Inicio />}></Route>
           {/* Paginas principales */}
           <Route path="/descuentos" element={<Descuentos />} />
+          <Route
+            path="/descuentos/descuentoparticular"
+            element={<DescuentoParticular />}
+          />
+
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/sorteos" element={<Sorteos />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/formulario" element={<Formulario />}>
+            {" "}
+          </Route>
           {/* Paginas principales */}
         </Routes>
       </BrowserRouter>

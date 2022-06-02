@@ -5,7 +5,7 @@ const BarraInicio = () => {
   return (
     <>
       <div className="">
-        <section className="flex absolute w-full justify-evenly fixed bottom-0 bg-secondary-bg text-main-text  ">
+        <section className="flex bottom w-full justify-evenly fixed bottom-0 bg-secondary-bg text-main-text  ">
           <Link className="p-5" to="/login">
             <img src="../src/img/icons/home.png" className="h-8 " alt="" />
           </Link>

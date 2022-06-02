@@ -12,11 +12,11 @@ const Descuentos = () => {
     <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
     <img src="https://unavatar.io/twitter/juampiCao9" className="h-5" alt="" />,
     <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
+    <img src="https://unavatar.io/twitter/juampiCao9" className="h-5" alt="" />,
     <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
+    <img src="https://unavatar.io/twitter/juampiCao9" className="h-5" alt="" />,
     <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
-    <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
-    <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
-    <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
+    <img src="https://unavatar.io/twitter/juampiCao9" className="h-5" alt="" />,
     <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
   ];
 
