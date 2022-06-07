@@ -15,3 +15,8 @@ Install:
 <!-- tailwind config -->
 
 <!-- Installs -->
+
+<!-- Folders -->
+  - components/pages/descuentos (principal)
+  - components/molecules/minidescuentos(vision de mini descuentos, dentro de principal)
+  - components/pages/descuentoParticular (indivual adentro descuento)
