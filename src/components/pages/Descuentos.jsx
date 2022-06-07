@@ -7,7 +7,7 @@ import Filters from "../atoms/Filters";
 import Search from "../atoms/Search";
 import DescuentoMini from "../molecules/DescuentoMini";
 
-const Descuentos = () => {
+const Descuentos = ({ descuentos, setDescuentos }) => {
   const fotos = [
     <img src="https://unavatar.io/twitter/midudev" className="h-5" alt="" />,
     <img src="https://unavatar.io/twitter/juampiCao9" className="h-5" alt="" />,

@@ -3,17 +3,17 @@ import { useState } from "react";
 import Layout from "../molecules/Layout";
 import Header from "../molecules/Header";
 
-const Formulario = () => {
+const Formulario = ({ descuentosGlobal, setDescuentosGlobal }) => {
   const [empresa, setEmpresa] = useState(``);
   const [direccion, setDireccion] = useState(``);
-  const [dias, setDias] = useState(``);
-  const [metodoPago, setMetodoPago] = useState(``);
-  const [descuento, setDescuento] = useState(``);
-  const [suscripcion, setSuscripcion] = useState(``);
+  const [dias, setDias] = useState("Lunes");
+  const [metodoPago, setMetodoPago] = useState("Efectivo");
+  const [descuento, setDescuento] = useState("5%");
+  const [suscripcion, setSuscripcion] = useState("gold");
 
   const [error, setError] = useState(false);
 
-  const objetoEmpresa = {
+  const objetoDatosDescuento = {
     empresa,
     direccion,
     dias,
@@ -35,8 +35,34 @@ const Formulario = () => {
   const handleLimpiar = (e) => {
     e.preventDefault();
   };
+
+  // const handleAgregarDescuento = async (valores) => {
+  //   valores.preventDefault();
+  //   // console.log(objetoDatosDescuento);
+  //   try {
+  //     let respuesta;
+  //     // Nuevo Registro
+  //     const url = `http://localhost:4000/descuentos/`;
+  //     respuesta = await fetch(url, {
+  //       method: "POST",
+  //       body: JSON.stringify({ objetoDatosDescuento }),
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     });
+
+  //     console.log(respuesta);
+  //     const resultado = await respuesta.json();
+  //     console.log(resultado);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
   const handleAgregarDescuento = (e) => {
     e.preventDefault();
+    setDescuentosGlobal(...objetoDatosDescuento);
+    console.log(setDescuentosGlobal);
   };
 
   const diasPosiblesDescuento = [
@@ -65,15 +91,16 @@ const Formulario = () => {
 
   const inputRadio = "";
   const botonAgregarDescuento =
-    "bg-black text-white px-2 py-3 w-3/5 mx-auto uppercase text-sm rounded-xl font-bold uppercase";
-  const botonLimpiar = "bg-slate-400 text-white rounded-lg px-3 py-1";
+    " duration-200 bg-black hover:bg-slate-900 text-white px-2 py-3 w-3/5 mx-auto uppercase text-sm rounded-xl font-bold uppercase cursor-pointer";
+  const botonLimpiar =
+    " duration-200 bg-slate-400 hover:bg-slate-500 text-white rounded-lg px-3 py-1";
 
   return (
     <div className="">
       <Layout />
       <Header title="Agregar Descuentos"></Header>
       <form
-        action="submit"
+        onSubmit={handleAgregarDescuento}
         className="flex flex-col space-y-3 m-2 p-4 shadow-lg  bg-slate-200 rounded-xl "
       >
         <div className="space-y-1">
@@ -157,8 +184,7 @@ const Formulario = () => {
         </div>
         <div className={inputDiv}>
           <label htmlFor="tipoSuscripcion" className={label}>
-            {" "}
-            Suscripcion{" "}
+            Suscripcion
           </label>
           <select
             name=""
@@ -182,13 +208,11 @@ const Formulario = () => {
           </button>
         </div>
 
-        <button
+        <input
           type="submit"
           className={botonAgregarDescuento}
-          onClick={handleAgregarDescuento}
-        >
-          Agregar Descuento
-        </button>
+          value="Agregar Descuento"
+        />
       </form>
     </div>
   );

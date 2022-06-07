@@ -23,6 +23,20 @@ import Formulario from "./components/pages/Formulario";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState(``);
+  const [descuentosGlobal, setDescuentosGlobal] = useState({});
+
+  useEffect(() => {
+    const obtenerLS = () => {
+      const descuentosLS = JSON.parse(localStorage.getItem("descuentos")) ?? [];
+      setDescuentosGlobal(descuentosLS);
+    };
+    obtenerLS();
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem(`descuentos`, JSON.stringify(descuentosGlobal));
+    console.log("componente listo");
+  }, [descuentosGlobal]);
 
   return (
     <div className="app">
@@ -39,7 +53,15 @@ function App() {
           <Route path="/noticias" element={<Noticias />} />
           <Route path="/sorteos" element={<Sorteos />} />
           <Route path="/login" element={<LogIn />} />
-          <Route path="/formulario" element={<Formulario />}>
+          <Route
+            path="/formulario"
+            element={
+              <Formulario
+                descuentosGlobal={descuentosGlobal}
+                setDescuentosGlobal={setDescuentosGlobal}
+              />
+            }
+          >
             {" "}
           </Route>
           {/* Paginas principales */}

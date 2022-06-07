@@ -15,7 +15,7 @@ const BarraInicio = () => {
           </Link>
 
           <Link className="p-5" to="/sorteos">
-            <img src="../src/img/icons/home.png" className="h-8 " alt="" />
+            <img src="../../src/img/icons/home.png" className="h-8 " alt="" />
           </Link>
 
           <Link className="p-5" to="/noticias">

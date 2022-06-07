@@ -1,0 +1,20 @@
+{
+  "descuentos": [
+    {
+      "empresa": "Nike",
+      "descuento": "30%",
+      "dias": ["Lunes", "Martes"],
+      "ubicacion": "Ciudad de la paz 2629, Caba ",
+      "suscripcion": "gold",
+      "metodoPago": "efectivo"
+    },
+    {
+      "empresa": "Adidas",
+      "descuento": "50%",
+      "dias": ["Miercoles", "Viernes"],
+      "ubicacion": "Cabildo 3024, Caba ",
+      "suscripcion": "premium",
+      "metodoPago": "efectivo"
+    }
+  ]
+}
