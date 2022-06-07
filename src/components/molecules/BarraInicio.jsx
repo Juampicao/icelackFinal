@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import home from "../../img/Icons/home.png";
+import home2 from "../../../public/img/Icons/home.png";
 
 const BarraInicio = () => {
   return (
@@ -13,7 +14,7 @@ const BarraInicio = () => {
           </Link>
 
           <Link className="p-5" to="/descuentos">
-            <img src="../src/img/icons/home.png" className="h-8 " alt="" />
+            <img src={home2} className="h-8 " alt="" />
           </Link>
 
           <Link className="p-5" to="/sorteos">
@@ -21,7 +22,7 @@ const BarraInicio = () => {
           </Link>
 
           <Link className="p-5" to="/noticias">
-            <img src="../src/img/icons/home.png" className="h-8 " alt="" />
+            <img src="../../img/Icons/home.png" className="h-8 " alt="" />
           </Link>
         </section>
       </div>
