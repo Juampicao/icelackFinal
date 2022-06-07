@@ -9,7 +9,7 @@ const Inicio = () => {
   return (
     <div>
       <Layout />
-      <h1 className=""> Inicio </h1>
+      <h1 className=""> Inicio. </h1>
       <CarrouselInicio />
     </div>
   );
